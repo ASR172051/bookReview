@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/output.css">
+</head>
+<body class="bg-white">
+    
+    <nav class="bg-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <img class="h-8 w-8" src="logo.svg" alt="Logo">
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                  <!-- <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Products</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-4 flex items-center space-x-4">
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sign up</a>
+              </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+              </div>
+          </div>
+        </div>
+      </nav>
+
+<div>
+      <section class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold text-gray-900">Introduction</h2>
+        <p class="text-lg text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </section>
+</div>
+
+
+
+
+    <section class="container mx-auto py-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <% for(let i=0;i<2;i++) {%>
+            <div class="bg-white shadow-md rounded-lg">
+                <img src="https://covers.openlibrary.org/b/isbn/9788173711466-M.jpg" alt="Book 1" class="rounded-t-lg w- h- object-cover">
+                <div class="p-6">
+                    <h5 class="text-gray-900 font-bold text-xl tracking-tight">Book Title <%= i+1 %></h5>
+                    <p class="font-normal text-gray-700">Book Summary 1</p>
+                    <p class="text-gray-500 mt-2">★★★★★ (4.5)</p>
+                </div>
+            </div>
+            <% } %>
+            <!-- <div class="bg-white shadow-md rounded-lg">
+                <img src="book2.jpg" alt="Book 2" class="rounded-t-lg w-full h-64 object-cover">
+                <div class="p-6">
+                    <h5 class="text-gray-900 font-bold text-xl tracking-tight">Book Title 2</h5>
+                    <p class="font-normal text-gray-700">Book Summary 2</p>
+                    <p class="text-gray-500 mt-2">★★★★☆ (4.0)</p>
+                </div>
+            </div> -->
+    
+            </div>
+    </section>
+
+
+
+
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <h2 class="font-bold text-lg">Your Website Name</h2>
+                    <p>Your website description</p>
+                </div>
+                <div class="flex flex-wrap items-center justify-center md:justify-end">
+                    <a href="#" class="mr-4 hover:text-white">Home</a>
+                    <a href="#" class="mr-4 hover:text-white">About</a>
+                    <a href="#" class="mr-4 hover:text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
